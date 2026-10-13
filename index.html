@@ -3,149 +3,231 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080814">
-  <meta name="description" content="Meet Zyro AI, your futuristic AI companion.">
-  <title>Zyro AI — Your AI Companion</title>
+  <meta name="description" content="Zyro AI — your AI companion for ideas, learning and coding.">
+  <title>Zyro AI — Think Beyond</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="background-glow glow-one"></div>
-  <div class="background-glow glow-two"></div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
 
   <header class="navbar">
-    <a href="#" class="logo">
-      <span class="logo-icon">Z</span>
-      <span>ZYRO<span class="accent"> AI</span></span>
+    <a href="#home" class="brand" aria-label="Zyro AI home">
+      <span class="brand-mark">Z</span>
+      <span>ZYRO<span class="purple-text"> AI</span></span>
     </a>
 
-    <nav>
+    <nav class="nav-links" aria-label="Main navigation">
       <a href="#home">Home</a>
       <a href="#features">Features</a>
       <a href="#about">About</a>
     </nav>
 
-    <button class="nav-button" data-chat>Launch assistant ↗</button>
+    <button class="button button-small button-outline" data-open-chat>
+      Launch Zyro <span>↗</span>
+    </button>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-content">
+    <section class="hero page-width" id="home">
+      <div class="hero-copy">
         <div class="eyebrow">
-          <span class="status-dot"></span>
-          YOUR NEXT-GEN AI COMPANION
+          <span class="live-dot"></span>
+          YOUR PERSONAL AI COMPANION
         </div>
 
         <h1>
-          Think beyond.<br>
-          Create with<br>
-          <span class="gradient-text">Zyro AI.</span>
+          Your ideas.<br>
+          Your universe.<br>
+          <span class="gradient-text">Your Zyro.</span>
         </h1>
 
         <p class="hero-description">
-          Your ideas deserve more. Get answers, explore possibilities,
-          and bring your creativity to life with your own AI companion.
+          From coding your next project to learning something new,
+          meet the AI companion that helps you think bigger.
         </p>
 
         <div class="hero-actions">
-          <button class="primary-button" data-chat>
-            Start chatting <span>↗</span>
+          <button class="button button-primary" data-open-chat>
+            Start a conversation <span>↗</span>
           </button>
-          <a href="#features" class="secondary-button">Explore features ↓</a>
+          <a class="button button-ghost" href="#features">
+            Explore Zyro <span>↓</span>
+          </a>
         </div>
 
-        <div class="trust-line">
-          <span class="online-indicator"></span>
-          <span>Your ideas. Your AI. Your world.</span>
+        <div class="hero-note">
+          <span class="live-dot"></span>
+          <span>Ready when inspiration strikes.</span>
         </div>
       </div>
 
-      <div class="hero-visual" aria-label="Abstract glowing AI orb">
-        <div class="orb-halo"></div>
-        <div class="orb-ring ring-one"></div>
-        <div class="orb-ring ring-two"></div>
-        <div class="orb-ring ring-three"></div>
-        <div class="orb">
-          <div class="orb-core">Z</div>
+      <div class="orb-scene" aria-label="Glowing Zyro AI orb">
+        <div class="orb-glow"></div>
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbit orbit-c"></div>
+
+        <div class="ai-orb">
+          <div class="orb-shine"></div>
+          <span class="orb-letter">Z</span>
+          <span class="orb-spark spark-one">✦</span>
+          <span class="orb-spark spark-two">✧</span>
         </div>
 
-        <div class="floating-card card-top">
-          <span class="mini-icon purple">✦</span>
-          <div>
-            <strong>Creative mode</strong>
-            <small>Ideas without limits</small>
-          </div>
+        <div class="floating-tag tag-top">
+          <span class="tag-icon violet">✦</span>
+          <span><strong>Creative thinking</strong><small>Ideas start here</small></span>
         </div>
 
-        <div class="floating-card card-bottom">
-          <span class="mini-icon cyan">⌘</span>
-          <div>
-            <strong>Ready to help</strong>
-            <small>Your AI is one click away</small>
-          </div>
+        <div class="floating-tag tag-bottom">
+          <span class="tag-icon blue">⌘</span>
+          <span><strong>AI assistance</strong><small>Let's build something</small></span>
         </div>
+
+        <span class="tiny-star star-a">✧</span>
+        <span class="tiny-star star-b">✦</span>
+        <span class="tiny-star star-c">✧</span>
       </div>
     </section>
 
-    <section class="features" id="features">
+    <section class="quick-section page-width" aria-labelledby="quick-title">
+      <div class="quick-heading">
+        <div>
+          <span class="section-kicker">WHERE SHOULD WE START?</span>
+          <h2 id="quick-title">Jump right in<span class="purple-text">.</span></h2>
+        </div>
+        <span class="quick-caption">Choose a prompt to start chatting</span>
+      </div>
+
+      <div class="prompt-grid">
+        <button class="prompt-card" data-prompt="Help me write and debug code. Ask me what programming language or project I am working on.">
+          <span class="prompt-icon icon-purple">&lt;/&gt;</span>
+          <span class="prompt-copy"><strong>Coding</strong><small>Build and debug projects</small></span>
+          <span class="prompt-arrow">↗</span>
+        </button>
+
+        <button class="prompt-card" data-prompt="Help me study a school subject. Ask which subject and topic I need help with, then explain it clearly.">
+          <span class="prompt-icon icon-blue">✎</span>
+          <span class="prompt-copy"><strong>Homework</strong><small>Learn step by step</small></span>
+          <span class="prompt-arrow">↗</span>
+        </button>
+
+        <button class="prompt-card" data-prompt="Help me write something. Ask what I am writing and what tone or style I want.">
+          <span class="prompt-icon icon-pink">✧</span>
+          <span class="prompt-copy"><strong>Writing</strong><small>Turn thoughts into words</small></span>
+          <span class="prompt-arrow">↗</span>
+        </button>
+
+        <button class="prompt-card" data-prompt="Help me brainstorm creative ideas. Ask what kind of project or idea I want to explore.">
+          <span class="prompt-icon icon-green">✳</span>
+          <span class="prompt-copy"><strong>Ideas</strong><small>Imagine what's possible</small></span>
+          <span class="prompt-arrow">↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="features page-width" id="features">
       <div class="section-heading">
-        <span class="section-label">BUILT FOR YOUR IDEAS</span>
-        <h2>One AI. <span class="gradient-text">More possibilities.</span></h2>
-        <p>Everything starts with a question.</p>
+        <span class="section-kicker">A LITTLE MORE POSSIBLE</span>
+        <h2>Made for the way <span class="gradient-text">you think.</span></h2>
+        <p>One place to explore, create and figure things out.</p>
       </div>
 
       <div class="feature-grid">
         <article class="feature-card">
-          <div class="feature-icon purple">✧</div>
-          <h3>Smart answers</h3>
-          <p>Explore questions, understand new topics, and learn something every day.</p>
-          <span class="card-number">01 / THINK</span>
+          <span class="feature-number">01</span>
+          <div class="feature-icon icon-purple">✧</div>
+          <h3>Learn anything</h3>
+          <p>Break complicated topics into clear explanations you can understand.</p>
+          <span class="feature-line"></span>
         </article>
 
         <article class="feature-card">
-          <div class="feature-icon cyan">⌘</div>
-          <h3>Creative ideas</h3>
-          <p>Brainstorm projects, discover fresh ideas, and turn inspiration into action.</p>
-          <span class="card-number">02 / CREATE</span>
+          <span class="feature-number">02</span>
+          <div class="feature-icon icon-blue">&lt;/&gt;</div>
+          <h3>Build your ideas</h3>
+          <p>Work through code, explore concepts and create your next project.</p>
+          <span class="feature-line"></span>
         </article>
 
         <article class="feature-card">
-          <div class="feature-icon pink">↗</div>
-          <h3>Instant help</h3>
-          <p>Open your assistant whenever you need a hand with your next idea.</p>
-          <span class="card-number">03 / EXPLORE</span>
+          <span class="feature-number">03</span>
+          <div class="feature-icon icon-pink">✦</div>
+          <h3>Think differently</h3>
+          <p>Brainstorm, write and discover new ways to approach a challenge.</p>
+          <span class="feature-line"></span>
         </article>
       </div>
     </section>
 
-    <section class="about" id="about">
-      <div class="about-symbol">Z<span>.</span></div>
-      <div>
-        <span class="section-label">WELCOME TO THE FUTURE</span>
-        <h2>Make your next idea<br>your best one.</h2>
-        <p>Zyro AI is built to help you think, learn, and create. Your next conversation starts here.</p>
-        <button class="primary-button" data-chat>Talk to Zyro AI ↗</button>
+    <section class="cta page-width" id="about">
+      <div class="cta-orb">Z</div>
+      <div class="cta-copy">
+        <span class="section-kicker">THE NEXT STEP IS YOURS</span>
+        <h2>Curiosity looks good on you.</h2>
+        <p>Bring a question. Bring an idea. Let's see where it goes.</p>
       </div>
+      <button class="button button-primary" data-open-chat>
+        Meet Zyro <span>↗</span>
+      </button>
     </section>
   </main>
 
-  <footer>
-    <a href="#" class="logo footer-logo">
-      <span class="logo-icon">Z</span>
-      <span>ZYRO<span class="accent"> AI</span></span>
+  <footer class="footer page-width">
+    <a href="#home" class="brand">
+      <span class="brand-mark">Z</span>
+      <span>ZYRO<span class="purple-text"> AI</span></span>
     </a>
-    <p>Made for curious minds.</p>
+    <p>Built for curious minds.</p>
     <span>© <span id="year">2026</span> Zyro AI</span>
   </footer>
 
-  <div class="chat-hint" id="chatHint" role="status" aria-live="polite">
-    Your assistant is loading. Try again in a moment.
-  </div>
+  <!-- Custom launch panel: actual conversations happen in Botpress. -->
+  <div class="chat-backdrop" id="chatBackdrop" hidden></div>
 
-  <script src="./script.js" defer></script>
+  <aside class="chat-panel" id="chatPanel" aria-labelledby="chat-title"
+         role="dialog" aria-modal="true" hidden>
+    <div class="chat-panel-header">
+      <div class="chat-identity">
+        <span class="chat-avatar">Z</span>
+        <span>
+          <strong id="chat-title">Zyro AI</strong>
+          <small><span class="live-dot"></span> Your AI companion</small>
+        </span>
+      </div>
+      <button class="close-chat" id="closeChat" aria-label="Close panel">×</button>
+    </div>
 
-  <!-- Your Botpress assistant -->
+    <div class="chat-panel-body">
+      <div class="welcome-orb">Z</div>
+      <span class="section-kicker">WELCOME TO ZYRO</span>
+      <h3>What's on your mind?</h3>
+      <p>Pick a starting point. I'll open our AI chat and send your prompt to the assistant.</p>
+
+      <div class="panel-prompts">
+        <button class="panel-prompt" data-prompt="Help me write and debug code. Ask me what programming language or project I am working on."> <span class="icon-purple">&lt;/&gt;</span> Help me with coding <span>↗</span></button>
+        <button class="panel-prompt" data-prompt="Help me study a school subject. Ask which subject and topic I need help with, then explain it clearly."><span class="icon-blue">✎</span> Help with homework <span>↗</span></button>
+        <button class="panel-prompt" data-prompt="Help me write something. Ask what I am writing and what tone or style I want."><span class="icon-pink">✧</span> Write something <span>↗</span></button>
+        <button class="panel-prompt" data-prompt="Help me brainstorm creative ideas. Ask what kind of project or idea I want to explore."><span class="icon-green">✳</span> Brainstorm ideas <span>↗</span></button>
+      </div>
+
+      <button class="button button-primary continue-chat" id="continueChat">
+        Open AI conversation <span>↗</span>
+      </button>
+      <p class="panel-note" id="panelStatus" role="status" aria-live="polite">
+        Powered by your connected Botpress assistant.
+      </p>
+    </div>
+  </aside>
+
+  <!-- Keep your own published Botpress integration. -->
   <script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
   <script src="https://files.bpcontent.cloud/2026/10/13/21/20261013215521-36JK107B.js" defer></script>
+  <script src="./script.js" defer></script>
 </body>
 </html>
+
+
