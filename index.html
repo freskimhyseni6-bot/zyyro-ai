@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080814">
+  <meta name="description" content="Meet Zyro AI, your futuristic AI companion.">
+  <title>Zyro AI — Your AI Companion</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <header class="navbar">
+    <a href="#" class="logo">
+      <span class="logo-icon">Z</span>
+      <span>ZYRO<span class="accent"> AI</span></span>
+    </a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <button class="nav-button" data-chat>Launch assistant ↗</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          YOUR NEXT-GEN AI COMPANION
+        </div>
+
+        <h1>
+          Think beyond.<br>
+          Create with<br>
+          <span class="gradient-text">Zyro AI.</span>
+        </h1>
+
+        <p class="hero-description">
+          Your ideas deserve more. Get answers, explore possibilities,
+          and bring your creativity to life with your own AI companion.
+        </p>
+
+        <div class="hero-actions">
+          <button class="primary-button" data-chat>
+            Start chatting <span>↗</span>
+          </button>
+          <a href="#features" class="secondary-button">Explore features ↓</a>
+        </div>
+
+        <div class="trust-line">
+          <span class="online-indicator"></span>
+          <span>Your ideas. Your AI. Your world.</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Abstract glowing AI orb">
+        <div class="orb-halo"></div>
+        <div class="orb-ring ring-one"></div>
+        <div class="orb-ring ring-two"></div>
+        <div class="orb-ring ring-three"></div>
+        <div class="orb">
+          <div class="orb-core">Z</div>
+        </div>
+
+        <div class="floating-card card-top">
+          <span class="mini-icon purple">✦</span>
+          <div>
+            <strong>Creative mode</strong>
+            <small>Ideas without limits</small>
+          </div>
+        </div>
+
+        <div class="floating-card card-bottom">
+          <span class="mini-icon cyan">⌘</span>
+          <div>
+            <strong>Ready to help</strong>
+            <small>Your AI is one click away</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="section-heading">
+        <span class="section-label">BUILT FOR YOUR IDEAS</span>
+        <h2>One AI. <span class="gradient-text">More possibilities.</span></h2>
+        <p>Everything starts with a question.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon purple">✧</div>
+          <h3>Smart answers</h3>
+          <p>Explore questions, understand new topics, and learn something every day.</p>
+          <span class="card-number">01 / THINK</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon cyan">⌘</div>
+          <h3>Creative ideas</h3>
+          <p>Brainstorm projects, discover fresh ideas, and turn inspiration into action.</p>
+          <span class="card-number">02 / CREATE</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon pink">↗</div>
+          <h3>Instant help</h3>
+          <p>Open your assistant whenever you need a hand with your next idea.</p>
+          <span class="card-number">03 / EXPLORE</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-symbol">Z<span>.</span></div>
+      <div>
+        <span class="section-label">WELCOME TO THE FUTURE</span>
+        <h2>Make your next idea<br>your best one.</h2>
+        <p>Zyro AI is built to help you think, learn, and create. Your next conversation starts here.</p>
+        <button class="primary-button" data-chat>Talk to Zyro AI ↗</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#" class="logo footer-logo">
+      <span class="logo-icon">Z</span>
+      <span>ZYRO<span class="accent"> AI</span></span>
+    </a>
+    <p>Made for curious minds.</p>
+    <span>© <span id="year">2026</span> Zyro AI</span>
+  </footer>
+
+  <div class="chat-hint" id="chatHint" role="status" aria-live="polite">
+    Your assistant is loading. Try again in a moment.
+  </div>
+
+  <script src="./script.js" defer></script>
+
+  <!-- Your Botpress assistant -->
+  <script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2026/10/13/21/20261013215521-36JK107B.js" defer></script>
+</body>
+</html>
